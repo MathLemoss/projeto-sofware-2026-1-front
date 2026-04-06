@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
 
-const BASE_URL = "/api";
+const BASE_URL = "http://18.228.48.67:8080";
 
 
 export default function PessoasApp() {
@@ -75,7 +75,7 @@ export default function PessoasApp() {
         {error && <div className="mb-4 text-red-600">{error}</div>}
 
         <div>
-          <h2 className="text-xl font-semibold mb-2">Lista de Pessoas</h2>
+          <h2 className="text-xl font-semibold mb-2">Lista de Conexões</h2>
 
           <button onClick={fetchConnections}>
             Carregar
